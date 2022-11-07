@@ -1,0 +1,22 @@
+
+-----------------------------------------------------------------------------
+
+Alumna: Diaz Ramos, Rocio.
+
+Profesor: Santiago GALLINO.
+
+Carrera: Diseño y Desarrollo Web
+
+Comisión: DWT3AH.
+
+Materia: Programacion II.
+
+Año: 2022.
+
+Primer Parcial
+--
+PHP, CSS con estructura HTML5 semántica
+-----------------------------------------------------------------------------
+
+Lenguajes y herramientas utilizados: 
+PHP, CSS (Bootstrap, BoxIcon, Animate), JavaScript (Vue, SW, Jquery).
