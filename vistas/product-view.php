@@ -21,7 +21,7 @@ $product = (new Product)-> viewById($_GET['id']);
 
         <div class="row" style="justify-content: center; align-items: center;">
             <div class="col-md-4 img-productview">
-                <img src="imgs/producto-<?= $product->getImg(); ?>" alt="product">
+                <img src="imgs/producto-<?= $product->getImg(); ?>"  alt="<?= $product->getImgDesc() ?>">
             </div>
             <div class="col-md-6">
 
