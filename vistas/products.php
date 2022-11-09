@@ -2,7 +2,9 @@
 // leer JSON
 
 require_once __DIR__ . '/../libraries/products.php';
-$products = productosTodo();
+$product = new Product;
+$products = $product->todo();
+
 
 ?>
 <div class="container-fixed">
@@ -15,24 +17,24 @@ $products = productosTodo();
 
             <div class="cards-container">
                 <?php foreach ($products as $product) : ?>
-                    <div class="cards-item">
-                        <div class="card">
-                            <div class="card_image"><img src="imgs/producto-<?= $product->product_img; ?>"></div>
-                            <div class="card_content">
-                                <em class="product_category"><?= $product->product_category; ?></em>
-                                <h2 class="card_title"><?= $product->product_name ?></h2>
-                                <p><?= $product->product_type; ?></p>
-                                <p class="card_text"><?= $product->product_price; ?></p>
+                <div class="cards-item">
+                    <div class="card">
+                        <div class="card_image"><img src="imgs/producto-<?= $product->getImg(); ?>"
+                                alt="<?= $product->getTitulo() ?>"></div>
+                        <div class="card_content">
+                            <em class="product_category"><?= $product->getCategory(); ?></em>
+                            <h2 class="card_title"><?= $product->getTitulo() ?></h2>
+                            <p><?= $product->getType(); ?></p>
+                            <p class="card_text"><?= $product->getPrice(); ?></p>
 
-                                <div class="cart-card"> <a href="#"><i class='bx bx-cart'></i></a></div>
-                            </div>
-                            <div class="inside">
-                                <div class="icon">
-                                    <a href="index.php?s=product-view&id=<?= $product->product_id; ?>"><i class='bx bx-info-circle'></i></a>
-                                </div>
-                            </div>
-                        </div>
+                            <div class="cart-card"> <a href="#"><i class='bx bx-cart'></i></a></div>
+                        </div> <a class="inside" href="index.php?s=product-view&id=<?= $product->getProductId(); ?>">
+
+                            <i class='bx bx-info-circle'></i>
+
+                        </a>
                     </div>
+                </div>
                 <?php endforeach; ?>
 
             </div>
