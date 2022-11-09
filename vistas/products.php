@@ -20,7 +20,7 @@ $products = $product->todo();
                 <div class="cards-item">
                     <div class="card">
                         <div class="card_image"><img src="imgs/producto-<?= $product->getImg(); ?>"
-                                alt="<?= $product->getTitulo() ?>"></div>
+                        alt="<?= $product->getImgDesc() ?>"></div>
                         <div class="card_content">
                             <em class="product_category"><?= $product->getCategory(); ?></em>
                             <h2 class="card_title"><?= $product->getTitulo() ?></h2>
