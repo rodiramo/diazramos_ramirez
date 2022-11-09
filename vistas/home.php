@@ -26,21 +26,21 @@ $products = (new Product)->todo();
     </div>
     <div class="carousel-inner">
         <div class="carousel-item active">
-            <a href="index.php?s=product-view&id=2"> <img src="imgs/1.png" alt="promo-20%off" /></a>
+            <a href="index.php?s=product-view&id=2"> <img src="imgs/1.png" alt="promo-20%off"></a>
             <div class="container d-flex">
                 <div class="carousel-caption ">
                 </div>
             </div>
         </div>
         <div class="carousel-item">
-            <a href="index.php?s=product-view&id=12"> <img src="imgs/2.png" alt="monstera" /></a>
+            <a href="index.php?s=product-view&id=12"> <img src="imgs/2.png" alt="monstera"></a>
             <div class="container">
                 <div class="carousel-caption">
                 </div>
             </div>
         </div>
         <div class="carousel-item">
-            <a href="index.php?s=product-view&id=1"> <img src="imgs/3.png" alt="Alocasia" /></a>
+            <a href="index.php?s=product-view&id=1"> <img src="imgs/3.png" alt="Alocasia"></a>
             <div class="container">
                 <div class="carousel-caption">
                 </div>
@@ -62,7 +62,7 @@ $products = (new Product)->todo();
         <li>
             <a href="" class="card-tipos">
                 <img src="https://images.pexels.com/photos/4622876/pexels-photo-4622876.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
-                    class="card__image" alt="anthurium" />
+                    class="card__image" alt="anthurium" >
                 <div class="card__overlay">
                     <div class="card__header">
                         <svg class="card__arc" xmlns="http://www.w3.org/2000/svg">
@@ -80,7 +80,7 @@ $products = (new Product)->todo();
         <li>
             <a href="" class="card-tipos">
                 <img src="https://images.pexels.com/photos/4870767/pexels-photo-4870767.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
-                    class="card__image" alt="philodendrons" />
+                    class="card__image" alt="philodendrons">
                 <div class="card__overlay">
                     <div class="card__header">
                         <svg class="card__arc" xmlns="http://www.w3.org/2000/svg">
@@ -98,7 +98,7 @@ $products = (new Product)->todo();
         <li>
             <a href="" class="card-tipos">
                 <img src="https://images.pexels.com/photos/6805805/pexels-photo-6805805.jpeg" class="card__image"
-                    alt="alocasia" />
+                    alt="alocasia">
                 <div class="card__overlay">
                     <div class="card__header">
                         <svg class="card__arc" xmlns="http://www.w3.org/2000/svg">
@@ -116,7 +116,7 @@ $products = (new Product)->todo();
         <li>
             <a href="" class="card-tipos">
                 <img src="https://images.pexels.com/photos/4593961/pexels-photo-4593961.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
-                    class="card__image" alt="calathea" />
+                    class="card__image" alt="calathea">
                 <div class="card__overlay">
                     <div class="card__header">
                         <svg class="card__arc" xmlns="http://www.w3.org/2000/svg">
@@ -134,7 +134,7 @@ $products = (new Product)->todo();
         <li>
             <a href="" class="card-tipos">
                 <img src="https://images.pexels.com/photos/1407305/pexels-photo-1407305.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
-                    class="card__image" alt="monstera" />
+                    class="card__image" alt="monstera">
                 <div class="card__overlay">
                     <div class="card__header">
                         <svg class="card__arc" xmlns="http://www.w3.org/2000/svg">
@@ -176,7 +176,7 @@ $products = (new Product)->todo();
 
                 <div class="card">
                     <div class="card_image"><img src="imgs/producto-<?= $product->getImg(); ?>"
-                            alt="<?= $product->getTitulo() ?>"></div>
+                            alt="<?= $product->getImgDesc() ?>"></div>
                     <div class="card_content">
                         <em class="product_category"><?= $product->getCategory(); ?></em>
                         <h2 class="card_title"><?= $product->getTitulo() ?></h2>
